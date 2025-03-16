@@ -1,0 +1,44 @@
+body {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.card {
+    transition: transform var(--transition-speed);
+    margin-bottom: 1rem;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-header {
+    border-bottom: none;
+}
+.list-unstyled li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.list-unstyled li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--bs-primary);
+}
+.form-control {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-primary);
+    color: var(--bs-light);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    vertical-align: text-bottom;
+}
+
